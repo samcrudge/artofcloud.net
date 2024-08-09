@@ -1,0 +1,108 @@
+baseURL: https://artofcloud.net/
+languageCode: en-us
+title: Art of Cloud
+theme: "PaperMod"
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  env: production
+  title: Art of Cloud
+  description: "A blog on AWS cloud practices"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["https://avatars.githubusercontent.com/u/37799019?v=4"]
+  defaultTheme: dark # dark, light
+  disableThemeToggle: true
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  mainSections:
+    - blog
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "./assets/favicon-16x16.png"
+    favicon16x16: "./assets/favicon-16x16.png"
+    favicon32x32: "./assets/favicon-32x32.png"
+    apple_touch_icon: "./assets/apple-touch-icon.png"
+    safari_pinned_tab: "./assets/safari-pinned-tab.png"
+
+  label:
+    text: "Home"
+    icon: ./assets/favicon-32x32.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: Art of Cloud
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: |
+      Hello! My names Sam and I own the Artofcloud.net blog and like to write about best practices and interesting aspects I find as I work.
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/samcrudge"
+    - name: github
+      url: "https://github.com/samcrudge"
+    - name: mastodon
+      url: "https://infosec.exchange/@Crudge"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/samuel-crudge/"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/samcrudge/artofcloud.net/blob/new/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: Blog
+      name: Blog
+      url: /blog/
+      weight: 10
+    # style: monokai
