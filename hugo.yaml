@@ -15,27 +15,27 @@ params:
   author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["https://avatars.githubusercontent.com/u/37799019?v=4"]
-  defaultTheme: dark # dark, light
-  disableThemeToggle: true
+  defaultTheme: auto # auto adapts to user's system preference
+  disableThemeToggle: false # Allow users to toggle between dark and light modes
 
-  ShowReadingTime: true
+  ShowReadingTime: true # Displays estimated reading time
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true # Show copy button for code snippets
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: true
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  showtoc: true # Enable Table of Contents for posts
+  tocopen: true # Keep Table of Contents open by default
 
   mainSections:
     - blog
 
   assets:
-    # disableHLJS: true # to disable highlight.js
+    # disableHLJS: true # Keep highlight.js enabled for syntax highlighting
     # disableFingerprinting: true
     favicon: "./assets/favicon-16x16.png"
     favicon16x16: "./assets/favicon-16x16.png"
@@ -67,7 +67,7 @@ params:
   homeInfoParams:
     Title: "Hi there \U0001F44B"
     Content: |
-      Hello! My names Sam and I own the Artofcloud.net blog and like to write about best practices and interesting aspects I find as I work.
+      Hello! My name's Sam and I own the Artofcloud.net blog and like to write about best practices and interesting aspects I find as I work.
 
   socialIcons:
     - name: twitter
@@ -99,10 +99,16 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+
 menu:
   main:
     - identifier: Blog
       name: Blog
       url: /blog/
       weight: 10
-    # style: monokai
+
+  # Syntax Highlighting Style
+  pygmentsStyle: monokai # You can change this to your preferred style
+
+
+  # Dark Mode Configuration (already included as 'auto' in params)
