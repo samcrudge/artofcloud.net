@@ -32,8 +32,7 @@ params:
   tocopen: true # Keep Table of Contents open by default
 
   mainSections:
-    - blog
-
+    - Terraform
   assets:
     # disableHLJS: true # Keep highlight.js enabled for syntax highlighting
     # disableFingerprinting: true
