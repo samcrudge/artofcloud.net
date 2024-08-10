@@ -107,8 +107,12 @@ menu:
       url: /blog/
       weight: 10
 
-  # Syntax Highlighting Style
-  pygmentsStyle: monokai # You can change this to your preferred style
+markup:
+  highlight:
+    style: monokai # Specify your preferred syntax highlighting style
+    noClasses: false # Enable CSS classes for syntax highlighting
 
-
-  # Dark Mode Configuration (already included as 'auto' in params)
+  tableOfContents:
+    startLevel: 1
+    endLevel: 4
+    ordered: false
